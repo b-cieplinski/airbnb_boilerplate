@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../components/Header.js'
+import Header from "../components/Header.js";
 import Footer from '../components/Footer'
 import { useRouter } from 'next/router';
 import { format } from "date-fns"

@@ -1,7 +1,5 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
-import Header from '../components/Header.js'
+import Header from "../components/Header.js"
 import Banner from '../components/Banner'
 import SmallCard from '../components/SmallCard'
 import MediumCard from '../components/MediumCard'
@@ -9,14 +7,14 @@ import LargeCard from '../components/LargeCard'
 import Footer from '../components/Footer'
 
 //importing props of the fetch function called exploredata
-export default function Home({ exploreData, cardData }) {
+export default function Home({ exploreData, cardData, placeholder}) {
   return (
     <div className="">
       <Head>
         <title>Air Kretowiny</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-<Header />
+<Header placeholder={placeholder}/>
 <Banner />
 <main className="max-w-7xl mx-auto px-8 sm:px-16">
   <section className="pt-6">
